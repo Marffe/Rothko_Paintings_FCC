@@ -1,0 +1,86 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+/* Variables */
+
+$text_color : rgb(27, 27, 27);
+$text_font  : 'Roboto', sans-serif;
+
+/* Base */
+
+* {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+    font-family: $text_font;
+}
+
+/* Media Queries */
+$MQPhone1 : 320px;
+$MQPhone2 : 375px;
+$MQPhone3 : 425px;
+$MQPhone4 : 540px;
+$MQTablet1 : 768px;
+$MQTablet2 : 820px;
+$MQPC_1 : 1024px;
+$MQPC_2 : 1280px; /* Default */
+$MQPC_3 : 1360px;
+$MQPC_4 : 1440px;
+$MQPC_5 : 1600px;
+$MQPC_6 : 1920px;
+$MQPC_7 : 2048px;
+$MQPC_8 : 2560px;
+
+/* Media Query Base */
+
+/* @media (min-width: #{AAA}) and (max-width: #{AAA}) {
+    
+}
+*/
+
+.frame {
+    width: 500px;
+    padding: 50px;
+    margin: 20px auto;
+    border: 50px solid black;
+}
+
+.canvas {
+    width: 500px;
+    height: 600px;
+    background-color: #4d0f00;
+    overflow: hidden;
+    filter: blur(2px);
+}
+
+.one {
+    width: 425px;
+    height: 150px;
+    background-color: #efb762;
+    box-shadow: 0 0 3px 3px #efb762;
+    border-radius: 9px;
+    transform: rotate(-0.6deg);
+}
+
+.two {
+    width: 475px;
+    height: 200px;
+    margin: 0 auto 20px;
+    background-color: #8f0401;
+    box-shadow: 0 0 3px 3px #8f0401;
+    border-radius: 8px 10px;
+    transform: rotate(0.4deg);
+}
+
+.one, .two {
+    filter: blur(1px);
+}
+
+.three {
+    width: 91%;
+    height: 28%;
+    margin: auto;
+    background-color: #b20403;
+    box-shadow: 0 0 5px 5px #b20403;
+    filter: blur(2px);
+    border-radius: 30px 25px 60px 12px;
+    transform: rotate(-0.2deg);
+}
