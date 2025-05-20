@@ -21,11 +21,11 @@ $MQPhone4 : 540px;
 $MQTablet1 : 768px;
 $MQTablet2 : 820px;
 $MQPC_1 : 1024px;
-$MQPC_2 : 1280px; /* Default */
+$MQPC_2 : 1280px;
 $MQPC_3 : 1360px;
 $MQPC_4 : 1440px;
 $MQPC_5 : 1600px;
-$MQPC_6 : 1920px;
+$MQPC_6 : 1920px; /* Default */
 $MQPC_7 : 2048px;
 $MQPC_8 : 2560px;
 
@@ -36,28 +36,49 @@ $MQPC_8 : 2560px;
 }
 */
 
-.frame {
-    width: 500px;
-    padding: 50px;
-    margin: 20px auto;
-    border: 50px solid black;
+.nav-bar {
+    width: 80%;
+    height: 28px;
+    border-radius: 8px;
+    margin: 8px auto;
+    background-color: #d9eea0;
+    display: flex;
+    justify-content: center;
+    padding: 1rem 6rem;
+    align-items: center;
+    list-style: none;
 }
 
-.canvas {
+.nav-bar li {
+    margin: 0px 32px 0px 32px;
+}
+
+.frame {
     width: 500px;
     height: 600px;
+    padding: 0px;
+    margin: 20px auto;
+    border: 24px solid black;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.frame .canvas {
+    width: 95%;
+    height: 95%;
     background-color: #4d0f00;
     overflow: hidden;
+    align-self: center;
     filter: blur(2px);
 }
 
 .one {
-    width: 425px;
+    width: 480px;
     height: 150px;
     background-color: #efb762;
     box-shadow: 0 0 3px 3px #efb762;
     border-radius: 9px;
-    transform: rotate(-0.6deg);
 }
 
 .two {
@@ -70,9 +91,7 @@ $MQPC_8 : 2560px;
     transform: rotate(0.4deg);
 }
 
-.one, .two {
-    filter: blur(1px);
-}
+.one, .two { filter: blur(1px); }
 
 .three {
     width: 91%;

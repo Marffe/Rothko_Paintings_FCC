@@ -1,25 +1,63 @@
-.frame {
-  width: 500px;
-  padding: 50px;
-  margin: 20px auto;
-  border: 50px solid black;
+@import url("https://fonts.googleapis.com/css2?family=Roboto&display=swap");
+/* Variables */
+/* Base */
+* {
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
+  font-family: "Roboto", sans-serif;
 }
 
-.canvas {
+/* Media Queries */
+/* Default */
+/* Media Query Base */
+/* @media (min-width: AAA) and (max-width: AAA) {
+
+}
+*/
+.nav-bar {
+  width: 80%;
+  height: 28px;
+  border-radius: 8px;
+  margin: 8px auto;
+  background-color: #d9eea0;
+  display: flex;
+  justify-content: center;
+  padding: 1rem 6rem;
+  align-items: center;
+  list-style: none;
+}
+
+.nav-bar li {
+  margin: 0px 32px 0px 32px;
+}
+
+.frame {
   width: 500px;
   height: 600px;
+  padding: 0px;
+  margin: 20px auto;
+  border: 24px solid black;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.frame .canvas {
+  width: 95%;
+  height: 95%;
   background-color: #4d0f00;
   overflow: hidden;
+  align-self: center;
   filter: blur(2px);
 }
 
 .one {
-  width: 425px;
+  width: 480px;
   height: 150px;
   background-color: #efb762;
   box-shadow: 0 0 3px 3px #efb762;
   border-radius: 9px;
-  transform: rotate(-0.6deg);
 }
 
 .two {
